@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- problem4: 输入一个整数，如果此数为0，则输出”石头”,如果此数为1，则输出”剪刀”,如果此数为2，则输出”布”,如果为其它，则输出”错误”? -->
+    <script>
+        var num = parseInt(window.prompt('input'));
+        switch (num) {
+                case 0: x = "石头";
+                break;
+                case 1: x = "剪刀";
+                break;
+                case 2: x= "布";
+                break;
+            default: x = "错误";
+        }
+        document.write(x);
+    </script>
+</body>
+</html>

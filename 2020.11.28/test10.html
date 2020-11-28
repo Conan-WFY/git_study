@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 东方航空从北京飞往马尔代夫的机票原价为4000元，
+        4到10月份为旺季， 其他月份为淡季，  
+        4~10月份 ：旺季时候 头等舱first 打9折， 经济舱 economy  打7.5折；
+        1~3月份，11月份： 淡季头等舱打6折， 经济舱打3折。
+        从页面输入出行的月份和选择的 舱型 计算出机票价格。 
+    -->
+
+    <script>
+        var month = parseInt(window.prompt('输入月份'));
+        var type = parseInt(window.prompt('输入舱型'));
+
+        var price =4000;
+        if(month >= 4 && month <= 10) {
+            // if(type = 'firstClass') {
+            //     document.write(price*.9); 
+            // }else{
+            //     document.write(price*.75); 
+            // }
+            type = 'firstClass'? document.write(price*.9):document.write(price*.75);
+        }else{
+            // if(type = 'economyClass') {
+            //     document.write(price*.6); 
+            // }else{
+            //     document.write(price*.3); 
+            // }
+            type = 'economyClass'? document.write(price*.9):document.write(price*.75);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- problem8: 输入数字，显示 星期几? -->
+    <script>
+        var num = parseInt(window.prompt('请输入数字','1'));
+        x = '';
+        var day = num % 7;
+        switch (day) {
+            case 0: x = "星期日"; break;
+            case 1: x = "星期一"; break;
+            case 2: x = "星期二"; break;
+            case 3: x = "星期三"; break;
+            case 4: x = "星期四"; break;
+            case 5: x = "星期五"; break;
+            case 6: x = "星期六"; break;
+    
+            default: x = '输入有误';
+        }
+
+        document.write(x);
+    </script>
+</body>
+</html>

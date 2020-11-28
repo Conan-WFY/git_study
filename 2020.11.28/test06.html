@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- problem6: 从大到小排序a、b、c三个整数? -->
+    <script>
+        // abc acb bac bca cab cba
+        var a = parseInt(window.prompt('input a'));
+        var b = parseInt(window.prompt('input b'));
+        var c = parseInt(window.prompt('input c'));
+    
+        if(a >= b) {
+            if(a >= c) {
+                if (b >= c) {
+                   document.write(a,b,c);
+                }else{
+                  document.write(a,c,b);
+                }
+            }else{
+                document.write(c,a,b);
+            }
+        }else{  //a<b
+            if(a < c) {
+                if (b >= c) {
+                   document.write(b,c,a);
+                }else{
+                  document.write(c,b,a);
+                }
+            }else{
+                document.write(b,a,c);
+            }
+        }
+    </script>
+</body>
+</html>
